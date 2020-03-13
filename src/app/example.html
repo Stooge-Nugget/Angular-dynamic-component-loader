@@ -1,0 +1,16 @@
+<div class="editor-container">
+  <div class="header">
+    Add New Purchase
+    <mat-icon fontSet="fal" fontIcon="fa-times" (click)="close()"></mat-icon>
+  </div>
+  <div class="body">
+    <div #content></div>
+  </div>
+
+  <div class="footer">
+    <button *ngIf="componentConfig?.hasSave" mat-button (click)="save()">
+      Save
+    </button>
+    <button mat-button (click)="close()">Cancel</button>
+  </div>
+</div>
